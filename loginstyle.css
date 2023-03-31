@@ -1,0 +1,513 @@
+html{
+    height:100%;
+}
+    
+    body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    
+}
+
+#header{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position:fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 5px 10px 15px rgb(124, 123, 124);
+    
+    margin-top: 0;
+
+}
+#header span.logo{
+    
+    font-weight: 900;
+    font-size: 22px;
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
+    
+    
+
+#header img{
+    height: 50px;
+    padding-left: 20px;
+    
+}
+
+#loginbox{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(239, 9, 232);
+    border-radius: 0px;
+    padding: 50px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+#loginbox h1{
+
+    color: rgb(8, 8, 57);
+    font-weight: 900;
+}
+
+
+
+#loginbox .fieldbox {
+    margin: 20px 5px;
+    
+}
+
+#loginbox .fieldbox input{
+    padding: 15px 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: rgba(255,255,255,0.6);
+    border: 1px solid rgb(239, 9, 232);
+    transition: 0.5s;
+}
+
+#loginbox button{
+    background-color: rgb(235, 11, 205);
+    border: none;
+    border-radius: 0px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 900;
+    transition: 0.5s;
+}
+#loginbox button:hover{
+    background-color: rgba(235, 11, 205,0.8);
+    transform: scale(1.1);
+}
+
+#label{
+    margin: 20px 0;
+    color: red;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    
+}
+
+#footer .bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px 0 50px;
+}
+
+
+
+#footer a{
+   margin: 10px;
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+    
+}
+#footer .copyright{
+   margin-right: 30px;
+    font-size: 14px;
+    font-weight: 100;
+    
+}
+
+#footer span.t{
+    margin: 30px 85px 10px 85px;
+    padding-top: 20px;
+    font-weight: 900;
+}
+
+#footer hr{
+    
+    margin: 20px 85px;
+}
+
+#searchbar{
+    width: 100%;
+    margin: 50px 150px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+#searchbar .sbar{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    
+}
+
+#searchbar .sbar input{
+    
+    width: 90%;
+    height: 50px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    padding-left: 50px;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+#searchbar .sbar .sbtn{
+    cursor: pointer;
+    width: 5%;
+    height: 55px;
+    background-color: blue;
+    border: none;
+    color:#fff;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+
+#ppl-list{
+    
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 85%;
+    padding: 50px;
+    }
+
+#ppl-list .row{
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-between;
+    margin: 20px;
+    
+}
+
+#ppl-list .row .s{
+    display: flex;
+    
+    padding: 0px;
+    flex-basis: 40%;
+    border-radius: 8px;
+    height: 170px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#ppl-list .row .s:nth-child(2){
+    margin-right: 50px;
+}
+
+#ppl-list .row .s .s-img{
+    width: 200px;
+    height: 170px;
+    border-radius: 8px;
+    padding: 0 20px 0 0;
+    
+}
+
+#ppl-list .row .s .s-info{
+    padding: 30px;
+    line-height: 30px;
+}
+#ppl-list .row .s .s-info .name{
+    font-size: 20px;
+    font-weight: 700;
+}
+#ppl-list .row .s .s-info .email{
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(99, 96, 96);
+}
+#ppl-list .row .s .s-info .location{
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(99, 96, 96);
+}
+#ppl-list .row .s .s-info .salary{
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(99, 96, 96);
+}
+
+#ppl-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+#ppl-data .ppl-bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 30%;
+    height: 500px;
+    margin-top: 30px;
+    border-radius: 9px;
+    margin-bottom: 30px;
+    
+
+}
+
+#ppl-data .ppl-bio .pimg{
+    
+    display: flex;
+    flex-basis: 50%;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+#ppl-data .ppl-bio .pimg img{
+    border-radius: 10px;
+    
+}
+
+#ppl-data .ppl-bio .pinfo{
+    margin-top: 30px;
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    padding-bottom: 30px;
+    
+
+}
+#ppl-data .ppl-bio .pinfo .name{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+#ppl-data .ppl-bio .pinfo .salary{
+    display: flex;
+}
+
+#ppl-data .ppl-bio .pinfo .email,
+#ppl-data .ppl-bio .pinfo .location,
+#ppl-data .ppl-bio .pinfo .salary{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(95, 93, 93);
+}
+
+#ppl-data .ppl-bio .pinfo i{
+    color: blue;
+    margin-right: 10px;
+    
+}
+
+#ppl-data .ppl-exp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin: 50px 0;
+}
+
+
+#ppl-data .ppl-exp .getinp{
+    margin-bottom: 50px;
+    
+}
+#ppl-data .ppl-exp .getinp input{
+    padding: 20px;
+    height:100%;
+    margin-right: 10px;
+    border-radius: 9px;
+}
+#ppl-data .ppl-exp .getinp button{
+    background-color: blue;
+    width: 100px;
+    height:60px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 9px;
+}
+
+#ppl-data .ppl-exp .getinp button:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#ppl-data .ppl-exp table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#ppl-data .ppl-exp table {
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+
+
+#myTable tr:nth-child(1) td:nth-child(3){
+    color: blue;
+}
+#myTable tr:last-child td:nth-child(3){
+    color: blue;
+}
+
+#myTable tr td:nth-child(3){
+    border: 1px solid black;
+    border-radius: 9px;
+    display: flex;
+    width: 100px;
+    
+}
+
+
+#salaryinp{
+    margin-left: 10px;
+}
+#myTable tr{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+#myTable tr td{
+    padding: 15px 40px;
+    font-size: 20px;
+    width: 120px;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+@media(max-width:1000px){
+    #ppl-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+              
+    }
+    #ppl-list .row{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+    }
+    #ppl-list .row .s:nth-child(2){
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+    #ppl-list .row .s{
+        width: 100%;
+        display: flex;
+        flex-basis: 100%;
+        
+    }
+    #ppl-list .row .s .s-img{
+        height: 180px;
+    }
+    footer .link,
+    footer .copyright{
+        font-size: 12px;
+    }
+
+    footer a,
+    footer .copyright{
+        margin: 0 10px;
+         padding: 0 5px;
+    }
+    
+    #ppl-data .ppl-bio{
+        width: 50%;
+    }
+    
+}
+
+@media(max-width:470px){
+    #ppl-list .row .s .s-img{
+        width: 120px;
+        height: 150px;
+        padding-right: 10px;
+    }
+
+    #ppl-list .row .s .s-info{
+        padding: 10px 0 0 0;
+        line-height: 30px;
+    }
+
+    footer .link,
+    footer .copyright{
+        font-size: 10px;
+        margin: 0;
+        font-weight: 0;
+    }
+    footer a,
+    footer .copyright{
+        margin: 5px;
+         padding: 5px;
+    }
+
+    #ppl-data .ppl-bio{
+        width: 70%;
+    }
+    #searchbar .sbar .sbtn{
+        width: 15%;
+    }
+    #searchbar .sbar #inp{
+        width: 85%;
+    }
+    #ppl-data .ppl-exp .getinp{
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: center;
+        
+    }
+    #ppl-data .ppl-exp .getinp input{
+        display: flex;
+        padding: 10px;
+        flex-basis: 20%;
+        width: 100px;
+        
+    }
+    #ppl-data .ppl-exp .getinp button{
+        width: 40%;
+        margin-top: 10px;
+        
+        height: 40px;
+    }
+
+    #myTable{
+        width: 80%;
+    }
+    #myTable tr td{
+        width: 20px;
+        font-size: 14px;
+        height: 20px;
+        margin: 0;
+        padding: 10px 30px;
+    }
+    
+}

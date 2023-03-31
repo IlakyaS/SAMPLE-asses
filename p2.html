@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>people2</title> <!--🤑-->
+    <link rel="stylesheet" href="loginstyle.css">
+    <script src="https://kit.fontawesome.com/c306293420.js" crossorigin="anonymous"></script>
+</head>
+<body onload="salarydisplay()">
+    <section id="header">
+        <img src="mainlogo.webp">
+        <span class="logo">TRACKER</span>
+    </section>
+
+    <section id="searchbar">
+        <form class="sbar">
+            <input id="inp"  type="text" placeholder="Search by name">
+            <button class="sbtn" onclick="keyupfun()"><i class="fas fa-search"></i></button>
+        </form>
+    </section>
+
+    
+    <section id="ppl-data">
+        
+        <div class="ppl-bio">
+
+            <div class="pimg" >
+                <img class="s-img" src="p2.jpg"> <!--🤑-->
+            </div>
+            <div class="pinfo"> <!--🤑-->
+                <div class="name">Ben</div>
+                <div class="email"><i class="fas fa-sharp fa-light fa-envelope"></i>ben99@gmail.com</div>
+                <div class="location"><i class="fas fa-light fa-location-dot"></i>Mexico</div>
+                <div  class="salary">
+                    <i class="fas fa-light fa-indian-rupee-sign"></i> 
+                    <div id="ssalary"> 35000</div> 
+                </div>                   
+            </div>              
+            
+        </div>
+
+
+        <div class="ppl-exp">
+
+        <div class="getinp">
+            <input id='cell1' placeholder="Expense" type="text"/>
+            <input id='cell2' placeholder="Amount" type="text"/>
+
+            <button onclick="insRow()">Add</button>
+        </div>
+
+
+            <table id="myTable" >
+                <tr>
+                  <td>Total Salary</td>
+                  <td>:</td>
+                  
+                  <td id="salaryinp">  </td>
+                </tr>
+
+                <tr>
+                    <td>Remaining Amount</td>
+                    <td>:</td>
+                    
+                    <td id="totalsalary">  </td>
+                  </tr>
+                
+              </table>
+
+        </div>
+            </section>
+
+    <footer id="footer">
+        <span class="t">Tracker</span>
+        <hr>
+        <div class="bottom">
+        <div class="link">
+            <a href="main.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="copyright">
+            Ⓒ 2023 Tracker. All rights reserved.
+        </div>
+    </div>
+    </footer>
+
+    <script src="table.js"></script>
+</body>
+</html>
